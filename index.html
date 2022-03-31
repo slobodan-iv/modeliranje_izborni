@@ -27,7 +27,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="https://slobodan-iv.github.io/visualization/">Визуализација</a>
+              <a class="nav-link" aria-current="page" href="https://slobodan-iv.github.io/visualization/">Визуелизација</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="https://slobodan-iv.github.io/modeliranje/">Сложене површине и FEM анализа</a>
@@ -58,37 +58,62 @@
           <div class="col-12 col-sm-12 col-md-11 col-lg-10">
             <div class="accordion" id="modeliranje_izborni_predmet">
               <div class="accordion-item">
-                <h2 class="accordion-header" id="slozene_povrsine">
-                  <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_slozene_povrsine" aria-expanded="true" aria-controls="collapse_slozene_povrsine">
-                    Сложене површине
+                <h2 class="accordion-header" id="visualization">
+                  <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_visulazation" aria-expanded="true" aria-controls="collapse_visulazation">
+                    Визуелизација
                   </button>
                 </h2>
-                <div id="collapse_slozene_povrsine" class="accordion-collapse collapse show" aria-labelledby="slozene_povrsine" data-bs-parent="#modeliranje_izborni_predmet">
+                <div id="collapse_visulazation" class="accordion-collapse collapse show" aria-labelledby="visualization" data-bs-parent="#modeliranje_izborni_predmet">
                   <div class="accordion-body">
-                    <div class="card ratio ratio-16x9">
-                      <iframe width="560" height="315" src="https://www.youtube.com/embed/2Y4UGTyngA0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <ul class="nav nav-tabs" id="visualization_tab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="assembly_visualization-tab" data-bs-toggle="tab" data-bs-target="#assembly_visualization" type="button" role="tab" aria-controls="assembly_visualization" aria-selected="true">Визуелизација склопа</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="jack_visualization-tab" data-bs-toggle="tab" data-bs-target="#jack_visualization" type="button" role="tab" aria-controls="jack_visualization" aria-selected="true">Визуелизација склопа ручне дизалице</button>
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="visualization_TabContent">
+                      <div class="tab-pane show active" id="assembly_visualization" role="tabpanel" aria-labelledby="assembly_visualization-tab">
+                        <div class="card ratio ratio-16x9">
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/lQlFsy7bf9o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                      </div>
+                      <div class="tab-pane" id="jack_visualization" role="tabpanel" aria-labelledby="jack_visualization-tab">
+                        <div class="card ratio ratio-16x9">
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/Zpo3h0J2bbA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="accordion-item">
-                <h2 class="accordion-header" id="FEM_analiza">
-                  <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_FEM_analiza" aria-expanded="true" aria-controls="collapse_FEM_analiza">
-                    FEM анализа
+                <h2 class="accordion-header" id="povrsine_i_FEM_analiza">
+                  <button class="btn accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_povrsine_i_FEM_analiza" aria-expanded="true" aria-controls="collapse_povrsine_i_FEM_analiza">
+                    Моделирање површина и FEM анализа
                   </button>
                 </h2>
-                <div id="collapse_FEM_analiza" class="accordion-collapse collapse" aria-labelledby="FEM_analiza" data-bs-parent="#modeliranje_izborni_predmet">
+                <div id="collapse_povrsine_i_FEM_analiza" class="accordion-collapse collapse" aria-labelledby="povrsine_i_FEM_analiza" data-bs-parent="#modeliranje_izborni_predmet">
                   <div class="accordion-body">
-                    <ul class="nav nav-tabs" id="FEM_analiza_tab" role="tablist">
+                    <ul class="nav nav-tabs" id="povrsine_i_FEM_analiza_tab" role="tablist">
                       <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="HW_Analysis-tab" data-bs-toggle="tab" data-bs-target="#HW_Analysis" type="button" role="tab" aria-controls="HW_Analysis" aria-selected="true">FEM анализа волана</button>
+                        <button class="nav-link active" id="modeliranje_povrsina-tab" data-bs-toggle="tab" data-bs-target="#modeliranje_povrsina" type="button" role="tab" aria-controls="modeliranje_povrsina" aria-selected="true">Моделирање површина</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="HW_Analysis-tab" data-bs-toggle="tab" data-bs-target="#HW_Analysis" type="button" role="tab" aria-controls="HW_Analysis" aria-selected="true">FEM анализа волана</button>
                       </li>
                       <li class="nav-item" role="presentation">
                         <button class="nav-link" id="Bicycle_Frame-tab" data-bs-toggle="tab" data-bs-target="#Bicycle_Frame" type="button" role="tab" aria-controls="Bicycle_Frame" aria-selected="true">FEM анализа рама бицикла</button>
                       </li>
                     </ul>
-                    <div class="tab-content" id="FEM_analiza_TabContent">
-                      <div class="tab-pane show active" id="HW_Analysis" role="tabpanel" aria-labelledby="HW_Analysis-tab">
+                    <div class="tab-content" id="povrsine_i_FEM_analiza_TabContent">
+                      <div class="tab-pane show active" id="modeliranje_povrsina" role="tabpanel" aria-labelledby="modeliranje_povrsina-tab">
+                        <div class="card ratio ratio-16x9">
+                          <iframe width="560" height="315" src="https://www.youtube.com/embed/2Y4UGTyngA0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                      </div>
+                      <div class="tab-pane" id="HW_Analysis" role="tabpanel" aria-labelledby="HW_Analysis-tab">
                         <div class="card ratio ratio-16x9">
                           <iframe width="560" height="315" src="https://www.youtube.com/embed/doaPlijGDbY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
